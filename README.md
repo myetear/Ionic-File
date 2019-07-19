@@ -60,6 +60,15 @@ Ionic应用程序在Web浏览器中运行
 ```
 ionic serve
 ```
+模拟 手机运行界面
+```
+npm i @ionic/lab
+//安装 lab
+```
+将运行命令改为
+```
+ionic serve --lab
+```
 
 ### 4. 添加平台
 Android
