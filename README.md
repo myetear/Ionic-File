@@ -122,7 +122,7 @@ cordova build -release android
 一、[Ionic开发Android项目app基本步骤](https://blog.csdn.net/qq_32378595/article/details/79510261)  
 二、[ionic3 底部Tabs切换菜单结合侧边栏sidemenu](http://www.ionic.wang/article-index-id-108.html)  
 三、[ionic app 创建和运行调试](https://www.cnblogs.com/Caiyilong/p/8553040.html)  
-四、[Unable to find command: cordova platfrom add android](https://blog.csdn.net/android_gjw/article/details/72864486)
+四、[Unable to find command: cordova platfrom add android](https://blog.csdn.net/android_gjw/article/details/72864486)  
 五、[@ionic/lab](https://www.npmjs.com/package/@ionic/lab)
 
 
