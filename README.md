@@ -123,6 +123,8 @@ cordova build -release android
 二、[ionic3 底部Tabs切换菜单结合侧边栏sidemenu](http://www.ionic.wang/article-index-id-108.html)  
 三、[ionic app 创建和运行调试](https://www.cnblogs.com/Caiyilong/p/8553040.html)  
 四、[Unable to find command: cordova platfrom add android](https://blog.csdn.net/android_gjw/article/details/72864486)
+五、[@ionic/lab](https://www.npmjs.com/package/@ionic/lab)
+
 
 ## About 关于
 Founder [Myetear](https://github.com/myetear)  
