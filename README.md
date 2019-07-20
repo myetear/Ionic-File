@@ -13,9 +13,9 @@ Ionic CLI 5.2.3
 > 
 
 
-## 目录
+# 目录
 * [写在前面](#写在前面)
-* [食用方法](##食用方法)
+* [食用方法](#食用方法)
     * [1.安装环境](###1.安装环境)
     * [2.创建项目](###2.创建项目)
     * [3.运行项目](###3.运行项目)
@@ -24,20 +24,20 @@ Ionic CLI 5.2.3
     * [6.编译(Web程序)](###6.编译(Web程序))
     * [7.模拟器中运行](###7.模拟器中运行)
     * [8.生成apk(未签名的apk）](###8.生成apk(未签名的apk))
-* [其他信息](##其他信息)
+* [其他信息](#其他信息)
     * [Gradle](###Gradle)
     * [Gradle镜像加速](###Gradle镜像加速)
     * [Android-SDK](###Android-SDK)
     * [文档地址](###文档地址)
     * [参考文献](###参考文献)
-* [About](##About)
+* [About](#About)
 
 # 写在前面
 
 此文档用于 Ionic 项目的 安装，创建，编译，打包。  
 ##### 由于暂时没有 MacOS 操作系统暂时忽略 IOS ,后期会添加缺少部分内容
 
-## 食用方法
+# 食用方法
 
 ### 1.安装环境
 
@@ -183,7 +183,7 @@ cordova build -release android
 
 
 
-## 其他信息
+# 其他信息
 
 ### Gradle
 推荐使用 4.10.3 [Gradle 镜像加速](###Gradle镜像加速)
@@ -247,7 +247,7 @@ cordova build -release android
 五、[@ionic/lab](https://www.npmjs.com/package/@ionic/lab)
 
 
-## About
+# About
 Founder [Myetear](https://github.com/myetear)  
 Creation time 2019-7-4  
 Only for internal use, not for all.
