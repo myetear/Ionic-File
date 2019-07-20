@@ -16,14 +16,14 @@ Ionic CLI 5.2.3
 ## 目录
 * [写在前面](#写在前面)
 * [食用方法](#食用方法)
-    * [一、安装环境](#一、安装环境)
-    * [二、创建项目](#二、创建项目)
-    * [三、运行项目](#三、运行项目)
-    * [四、生成工程文件(添加平台)](#四、生成工程文件(添加平台))
-    * [五、删除工程文件(移除平台)](#五、删除工程文件(移除平台))
-    * [六、编译(Web程序)](#六、编译(Web程序))
-    * [七、模拟器中运行](#七、模拟器中运行)
-    * [八、生成apk(未签名的apk）](#八、生成apk(未签名的apk))
+    * [安装环境](#安装环境)
+    * [创建项目](#创建项目)
+    * [运行项目](#运行项目)
+    * [生成工程文件(添加平台)](#生成工程文件(添加平台))
+    * [删除工程文件(移除平台)](#删除工程文件(移除平台))
+    * [编译(Web程序)](#编译(Web程序))
+    * [模拟器中运行](#模拟器中运行)
+    * [生成apk(未签名的apk）](#生成apk(未签名的apk))
 * [其他信息](#其他信息)
     * [Gradle](#Gradle)
     * [Gradle镜像加速](#Gradle镜像加速)
@@ -39,7 +39,7 @@ Ionic CLI 5.2.3
 
 # 食用方法
 
-### 一、安装环境
+### 安装环境
 
 #### 1 预先安装
 > 请预先安装   
@@ -76,7 +76,7 @@ ionic -version
 cordova –version
 ```
 
-### 二、创建项目
+### 创建项目
 
 启动一个新的Ionic应用程序非常简单。从命令行运行ionic start命令，CLI将处理其余的命令。
 ```
@@ -97,7 +97,7 @@ ionic start --list
 [更多详情](https://ionicframework.com/docs/building/starting)
 
 
-### 三、运行项目
+### 运行项目
 Ionic应用程序在Web浏览器中运行
 ```
 ionic serve
@@ -112,7 +112,7 @@ npm i @ionic/lab
 ionic serve --lab
 ```
 
-### 四、生成工程文件(添加平台)
+### 生成工程文件(添加平台)
 Android
 ```
 ionic cordova platform add android
@@ -125,7 +125,7 @@ ionic cordova platform add ios
 > .\platforms
 
 
-### 五、删除工程文件(移除平台)
+### 删除工程文件(移除平台)
 Android
 ```
 ionic cordova platform rm android
@@ -135,7 +135,7 @@ Ios
 ionic cordova platform rm ios
 ```
 
-### 六、编译(Web程序)
+### 编译(Web程序)
 #### Android
 ```
 ionic build add android
@@ -147,7 +147,7 @@ ionic build add ios
 > 编译成 WWW 文件夹下的JS文件  
 > 如果执行 生成apk(未签名的apk , 将会自动生成Web程序
 
-### 七、模拟器中运行
+### 模拟器中运行
 Android
 ```
 ionic emulate android
@@ -161,7 +161,7 @@ ionic emulate ios
 > [ERROR] Unable to find command: emulate android
 > ```  
 
-### 八、生成apk(未签名的apk)
+### 生成apk(未签名的apk)
 先执行编译安卓代码 再进行打包
 ```
 ionic cordova build android --release
