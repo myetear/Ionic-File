@@ -147,6 +147,11 @@ ionic build add ios
 > 编译成 WWW 文件夹下的JS文件  
 > 如果执行 生成apk(未签名的apk , 将会自动生成Web程序
 
+### 编译源码
+```
+ionic cordova build android
+```
+
 ### 模拟器中运行
 Android
 ```
