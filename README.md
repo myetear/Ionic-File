@@ -199,6 +199,25 @@ cordova build -release android
 > 
 > ```
 
+### 修改图标
+```
+ionic cordova resources
+ionic cordova resources ios
+ionic cordova resources android
+```
+
+#### 安装 cordova-res
+```
+npm i -g cordova-res
+```
+
+### 修改名称
+./config.xml 
+```
+ <name>名字</name>
+ <description>app描述</description>
+ <author email="email@email.com" href="http://example.com/">作者信息</author>
+```
 
 
 ## 其他信息
@@ -269,7 +288,8 @@ cordova build -release android
 ### 文档地址
 
 [Angular](https://angular.io)  
-[Ionic](https://ionicframework.com/docs)
+[Ionic](https://ionicframework.com/docs)  
+[cordova](https://cordova.apache.org/)
 
 ### 参考文献
 
@@ -278,6 +298,7 @@ cordova build -release android
 三、[ionic app 创建和运行调试](https://www.cnblogs.com/Caiyilong/p/8553040.html)  
 四、[Unable to find command: cordova platfrom add android](https://blog.csdn.net/android_gjw/article/details/72864486)  
 五、[@ionic/lab](https://www.npmjs.com/package/@ionic/lab)
+六、[修改名称/图标](https://blog.csdn.net/qq_30100043/article/details/54985045)
 
 
 ### 解决报错
