@@ -253,7 +253,7 @@ cordova build -release android
 > ```
 
 ### Android-SDK 
-> 可以尝试安装 Android Stuido 会自动下载 SDK
+> 可以尝试安装 [Android Stuido](#Android-Stuido) 会自动下载 SDK
 
 #### 环境变量 
 请根据自己安装的位置替换 - 后的内容
