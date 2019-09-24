@@ -30,6 +30,7 @@ Ionic CLI 5.2.3
     * [Android-SDK](#Android-SDK)
     * [文档地址](#文档地址)
     * [参考文献](#参考文献)
+    * [解决报错](#解决报错)
 * [About](#About)
 
 ## 写在前面
@@ -42,6 +43,7 @@ Ionic CLI 5.2.3
 ### 安装环境
 
 #### 1 预先安装
+
 > 请预先安装   
 > * [Node.js](https://nodejs.org/en/) 
 > * [Angular Cli](https://angular.cn/cli)  
@@ -50,9 +52,11 @@ Ionic CLI 5.2.3
 > * [JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)   
 
 > 选装
-> * [Android Studio(免费)](https://developer.android.google.cn/)
-> * [IntelliJ IDEA(拥有社区版)](http://www.jetbrains.com/idea/)
-> * [WebStorm(收费)](http://www.jetbrains.com/)
+> * [Android Studio(免费)](#Android-Stuido)
+> * [IntelliJ IDEA(社区版)](http://www.jetbrains.com/idea/)
+> * [WebStorm(收费)](http://www.jetbrains.com/)  
+
+注: 下载 Android Studio 会自动下载 Android SDK 和 Gradle
 
 #### 2 安装Ionic
 ```
@@ -104,8 +108,7 @@ ionic serve
 ```
 模拟 手机运行界面
 ```
-npm i @ionic/lab
-//安装 lab
+npm i @ionic/lab  //安装 lab
 ```
 将运行命令改为
 ```
@@ -155,16 +158,26 @@ ionic cordova build android
 ### 模拟器中运行
 Android
 ```
-ionic emulate android
+ionic cordova run android // 可以向 模拟器 或 手机 安装
+
+ionic cordova emulate android / /未确定命令用处
+ionic emulate android // 未确定命令用处
 ```
 Ios
 ```
-ionic emulate ios 
+ionic cordova run ios // 尝试使用这个
+
+ionic cordova emulate ios // 未确定命令用处
+ionic emulate ios // 未确定命令用处
 ```
 > 暂时无法使用这个命令 会报错
 > ```
 > [ERROR] Unable to find command: emulate android
 > ```  
+> 解决:  尝试使用一下命令
+> ```
+> ionic cordova run android[ios]
+> ```
 
 ### 生成apk(未签名的apk)
 先执行编译安卓代码 再进行打包
@@ -192,14 +205,18 @@ cordova build -release android
 
 ### Gradle
 推荐使用 4.10.3 [Gradle 镜像加速](#Gradle镜像加速)
-#### 下载
-> 下载地址: https://gradle.org/releases/  
+#### 下载地址
+> 官方: https://gradle.org/releases/    
+> 个人: [4.10.3](https://lcloud-1252650524.cos.ap-beijing.myqcloud.com/gradle-4.10.3-all.zip)
+
 
 #### 安装
 > 将文件解压即可
 
 #### 环境变量
-> 解压路径 \gradle-4.10.3\bin
+> 解压路径 \gradle-4.10.3  
+> GRADLE_HOME -> E:\Environmental\.gradle  
+> Path -> %GRADLE_HOME%\bin
 
 #### 放入文件
 > 将文件放到啊这个路径下面 并解压
@@ -238,6 +255,17 @@ cordova build -release android
 ### Android-SDK 
 > 可以尝试安装 Android Stuido 会自动下载 SDK
 
+#### 环境变量 
+请根据自己安装的位置替换 - 后的内容
+> ANDROID_HOME - E:\Sdk  
+> ANDROID_SDK_ROOT - %ANDROID_HOME%  
+> ANDROID_AVD_HOME - E:\Environmental\.android\avd  
+> ANDROID_SDK_HOME - E:\Environmental\  
+
+### Android-Stuido
+一、 使用 [jetbrains](https://www.jetbrains.com) 的 [Toolbox](https://www.jetbrains.com/toolbox/app/?fromMenu) 下载 Android Stuido
+
+二、 在 [developer](https://developer.android.google.cn) 中下载 [Android Studio](https://developer.android.google.cn)
 ### 文档地址
 
 [Angular](https://angular.io)  
@@ -250,6 +278,16 @@ cordova build -release android
 三、[ionic app 创建和运行调试](https://www.cnblogs.com/Caiyilong/p/8553040.html)  
 四、[Unable to find command: cordova platfrom add android](https://blog.csdn.net/android_gjw/article/details/72864486)  
 五、[@ionic/lab](https://www.npmjs.com/package/@ionic/lab)
+
+
+### 解决报错
+
+#### @angular-devkit/build-angular:browser
+错误描述:  
+An unhandled exception occurred: Could not find the implementation for builder @angular-devkit/build-angular:browser  
+
+修复办法:  
+>安装 yarn add @angular-devkit/build-angular
 
 
 ## About
