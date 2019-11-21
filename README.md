@@ -199,12 +199,6 @@ cordova build -release android
 > 
 > ```
 
-
-### 将 APK 包安装到手机
-```
-native-run.cmd android --app platforms\android\app\build\outputs\apk\debug\app-debug.apk --device
-```
-
 ### 修改图标
 ```
 ionic cordova resources
@@ -315,48 +309,6 @@ An unhandled exception occurred: Could not find the implementation for builder @
 
 修复办法:  
 >安装 yarn add @angular-devkit/build-angular
-
-
-## 扩展内容
-扩展内容部分文档未公开(可以尝试使用邮件联系作者获取其他文档)
-
-### 创建页面 
-```
-ionic generate
-? What would you like to generate? page
-? Name/path of page: portfolio █
-```
-```
-ionic g page "User Detail"
-> ng generate page "User Detail"
-CREATE src/app/user-detail/user-detail.module.ts (564 bytes)
-CREATE src/app/user-detail/user-detail.page.scss (0 bytes)
-CREATE src/app/user-detail/user-detail.page.html (138 bytes)
-CREATE src/app/user-detail/user-detail.page.spec.ts (720 bytes)
-CREATE src/app/user-detail/user-detail.page.ts (280 bytes)
-UPDATE src/app/app-routing.module.ts (475 bytes)
-[OK] Generated page!
-```
-[更多信息](https://ionicframework.com/docs/building/scaffolding)
-
-### 头像上传
- > 请将 [ Ionic 拍照裁剪或相册选择图片](https://github.com/myetear/document) 和 [Ionic 上传文件(图片)](https://github.com/myetear/document) 配合使用
-
-###  Ionic 拍照裁剪或相册选择图片
- >  [详情](https://github.com/myetear/document)
-
-### Ionic 上传文件(图片)
- > [详情](https://github.com/myetear/document)
-
-### Ionic 判断应用版本
- > [详情](https://github.com/myetear/document)
-
-### Ionic 应用更新 (Android)
- > [详情](https://github.com/myetear/document)
-
-### Ionic 应用多语言(国际化)
- > [详情](https://github.com/myetear/document)
-
 
 
 ## About
