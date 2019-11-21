@@ -9,7 +9,7 @@ Original address(原始地址) : https://github.com/myetear/Ionic-File
 Angular CLI: 8.1.2  
 Ionic CLI 5.2.3
 
-> 内容不全待补充Ing...
+> 公开文档暂停更新
 > 
 
 
